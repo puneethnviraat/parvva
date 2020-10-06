@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en-US" class="no-js">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Parvva diagnostics</title>
+ <link rel="icon" href="wp-content/uploads/sites/48/2017/02/parvva-logo-title.png"  >
+
+<meta name="description" content="" />
+<meta property="og:image" content="" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="" />
+<meta property="og:description" content="" />
+<meta property="og:url" content="" />
+<meta property="og:site_name" content="" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="" />
+<meta name="twitter:description" content="" />
+<meta name="twitter:image" content="" />
+<link rel="canonical" href="" />
+
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="" href="" />
+<link rel="alternate" type="application/rss+xml" title="" href="" />
+
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='wp-includes/css/dist/block-library/style.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-block-style-css' href='wp-content/plugins/woocommerce/packages/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css' href='wp-content/plugins/contact-form-7/includes/css/styles.css' type='text/css' media='all' />
+<link rel='stylesheet' id='siteorigin-panels-front-css' href='wp-content/plugins/siteorigin-panels/css/front-flex.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='woocommerce-layout-css' href='wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css' type='text/css' media='all' />
+<link rel='stylesheet' id='woocommerce-smallscreen-css' href='wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css' type='text/css' media='only screen and (max-width: 768px)' />
+<link rel='stylesheet' id='woocommerce-general-css' href='wp-content/plugins/woocommerce/assets/css/woocommerce.css' type='text/css' media='all' />
+<style id='woocommerce-inline-inline-css' type='text/css'>
+.woocommerce form .form-row .required { visibility: visible; }
+</style>
+<link rel='stylesheet' id='medicpress-main-css' href='wp-content/themes/medicpress-pt/style.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='medicpress-woocommerce-css' href='wp-content/themes/medicpress-pt/woocommerce.min.css' type='text/css' media='all' />
+
+<link rel="stylesheet" href="wp-includes/css/style.css">
+<link rel='stylesheet' id='medicpress-google-fonts-css' href='font-sans-new.css' type='text/css' media='all' />
+<link rel='stylesheet' id='pt-pb-style-css' href='wp-content/plugins/pt-preview-bar/assets/css/dist/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-featherlight-css' href='wp-content/plugins/wp-featherlight/css/wp-featherlight.min.css' type='text/css' media='all' />
+<script type='text/javascript' src='wp-includes/js/jquery/jquery.js'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/jquery-migrate.min.js'></script>
+<script type='text/javascript' src='wp-content/themes/medicpress-pt/assets/js/modernizr.custom.20160801.js'></script>
+<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+<style type="text/css" media="all" id="siteorigin-panels-layouts-head">/* Layout 9 */ #pgc-9-0-0 , #pgc-9-0-1 , #pgc-9-0-2 { width:33.3333% } #pl-9 #panel-9-0-0-0 , #pl-9 #panel-9-0-1-0 , #pl-9 #panel-9-0-2-0 , #pl-9 #panel-9-1-0-0 , #pl-9 #panel-9-2-0-0 , #pl-9 #panel-9-2-1-0 , #pl-9 #panel-9-3-0-0 , #pl-9 #panel-9-3-1-0 , #pl-9 #panel-9-3-2-0 , #pl-9 #panel-9-4-0-0 , #pl-9 #panel-9-5-0-0 , #pl-9 #panel-9-5-0-1 , #pl-9 #panel-9-5-1-0 , #pl-9 #panel-9-5-1-1 , #pl-9 #panel-9-5-2-0 , #pl-9 #panel-9-5-2-1 , #pl-9 #panel-9-5-3-0 , #pl-9 #panel-9-5-3-1 , #pl-9 #panel-9-6-0-0 , #pl-9 #panel-9-6-1-0 , #pl-9 #panel-9-7-0-0 , #pl-9 #panel-9-8-0-0 , #pl-9 #panel-9-9-0-0 , #pl-9 #panel-9-9-1-0 , #pl-9 #panel-9-9-2-0 , #pl-9 #panel-9-10-0-0 , #pl-9 #panel-9-11-0-0 , #pl-9 #panel-9-11-1-0 {  } #pg-9-0 , #pg-9-4 , #pl-9 .so-panel:last-child { margin-bottom:0px } #pgc-9-1-0 , #pgc-9-4-0 , #pgc-9-7-0 , #pgc-9-8-0 , #pgc-9-10-0 { width:100%;width:calc(100% - ( 0 * 30px ) ) } #pg-9-1 { margin-bottom:87px } #pgc-9-2-0 { width:33%;width:calc(33% - ( 0.67 * 30px ) ) } #pgc-9-2-1 { width:67%;width:calc(67% - ( 0.33 * 30px ) ) } #pg-9-2 , #pl-9 .so-panel { margin-bottom:30px } #pgc-9-3-0 , #pgc-9-3-1 , #pgc-9-3-2 , #pgc-9-9-0 , #pgc-9-9-1 , #pgc-9-9-2 { width:33.3333%;width:calc(33.3333% - ( 0.66666666666667 * 30px ) ) } #pg-9-3 { margin-bottom:83px } #pgc-9-5-0 , #pgc-9-5-1 , #pgc-9-5-2 , #pgc-9-5-3 { width:25%;width:calc(25% - ( 0.75 * 30px ) ) } #pg-9-5 , #pg-9-7 { margin-bottom:85px } #pgc-9-6-0 , #pgc-9-6-1 { width:50%;width:calc(50% - ( 0.5 * 45px ) ) } #pg-9-6 { margin-bottom:62px } #pg-9-8 { margin-bottom:32px } #pg-9-9 { margin-bottom:90px } #pg-9-10 { margin-bottom:94px } #pgc-9-11-0 , #pgc-9-11-1 { width:50%;width:calc(50% - ( 0.5 * 30px ) ) } #pg-9-11 { margin-bottom:20px } #pg-9-0> .panel-row-style , #pg-9-1> .panel-row-style { background-color:#e9edf0 } #pg-9-0.panel-no-style, #pg-9-0.panel-has-style > .panel-row-style { -webkit-align-items:stretch;align-items:stretch } #panel-9-0-0-0> .panel-widget-style { background-color:#ffffff;padding:30px 40px 15px 40px } #panel-9-0-1-0> .panel-widget-style { text-align:center;background-color:#d8031c;padding:30px 40px 15px 40px } #panel-9-0-2-0> .panel-widget-style { background-color:#01016f;padding:33px 40px 15px 40px } #panel-9-1-0-0> .panel-widget-style { padding:0px 0px 30px 0px } #pg-9-4> .panel-row-style { background-color:#e9edf0;padding:86px 0px 0px 0px } #pg-9-5> .panel-row-style { background-color:#e9edf0;padding:40px 0px 64px 0px } #panel-9-5-3-0> .panel-widget-style { margin-bottom: -15px } #panel-9-6-0-0> .panel-widget-style { margin-bottom: -10px } #pg-9-7> .panel-row-style { background-image:url(wp-content/uploads/sites/48/2017/02/background6.jpg);background-position:center center;background-repeat:no-repeat } #panel-9-7-0-0> .panel-widget-style { padding:55px 0px 55px 0px } #pg-9-10> .panel-row-style { background-image:url(wp-content/uploads/sites/48/2017/02/background8.jpg);background-attachment:fixed;background-position:center center;background-size:cover } #panel-9-10-0-0> .panel-widget-style { padding:88px 0px 100px 0px } #pg-9-11> .panel-row-style { margin-bottom: -3rem } #pg-9-11.panel-no-style, #pg-9-11.panel-has-style > .panel-row-style { -webkit-align-items:flex-start;align-items:flex-start } @media (max-width:991px){ #pg-9-0.panel-no-style, #pg-9-0.panel-has-style > .panel-row-style , #pg-9-1.panel-no-style, #pg-9-1.panel-has-style > .panel-row-style , #pg-9-2.panel-no-style, #pg-9-2.panel-has-style > .panel-row-style , #pg-9-3.panel-no-style, #pg-9-3.panel-has-style > .panel-row-style , #pg-9-4.panel-no-style, #pg-9-4.panel-has-style > .panel-row-style , #pg-9-5.panel-no-style, #pg-9-5.panel-has-style > .panel-row-style , #pg-9-6.panel-no-style, #pg-9-6.panel-has-style > .panel-row-style , #pg-9-7.panel-no-style, #pg-9-7.panel-has-style > .panel-row-style , #pg-9-8.panel-no-style, #pg-9-8.panel-has-style > .panel-row-style , #pg-9-9.panel-no-style, #pg-9-9.panel-has-style > .panel-row-style , #pg-9-10.panel-no-style, #pg-9-10.panel-has-style > .panel-row-style , #pg-9-11.panel-no-style, #pg-9-11.panel-has-style > .panel-row-style { -webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column } #pg-9-0 > .panel-grid-cell , #pg-9-0 > .panel-row-style > .panel-grid-cell , #pg-9-1 > .panel-grid-cell , #pg-9-1 > .panel-row-style > .panel-grid-cell , #pg-9-2 > .panel-grid-cell , #pg-9-2 > .panel-row-style > .panel-grid-cell , #pg-9-3 > .panel-grid-cell , #pg-9-3 > .panel-row-style > .panel-grid-cell , #pg-9-4 > .panel-grid-cell , #pg-9-4 > .panel-row-style > .panel-grid-cell , #pg-9-5 > .panel-grid-cell , #pg-9-5 > .panel-row-style > .panel-grid-cell , #pg-9-6 > .panel-grid-cell , #pg-9-6 > .panel-row-style > .panel-grid-cell , #pg-9-7 > .panel-grid-cell , #pg-9-7 > .panel-row-style > .panel-grid-cell , #pg-9-8 > .panel-grid-cell , #pg-9-8 > .panel-row-style > .panel-grid-cell , #pg-9-9 > .panel-grid-cell , #pg-9-9 > .panel-row-style > .panel-grid-cell , #pg-9-10 > .panel-grid-cell , #pg-9-10 > .panel-row-style > .panel-grid-cell , #pg-9-11 > .panel-grid-cell , #pg-9-11 > .panel-row-style > .panel-grid-cell { width:100%;margin-right:0 } #pgc-9-0-0 , #pgc-9-0-1 , #pgc-9-2-0 , #pgc-9-3-0 , #pgc-9-3-1 , #pgc-9-5-0 , #pgc-9-5-1 , #pgc-9-5-2 , #pgc-9-6-0 , #pgc-9-9-0 , #pgc-9-9-1 , #pgc-9-11-0 { margin-bottom:30px } #pl-9 .panel-grid-cell { padding:0 } #pl-9 .panel-grid .panel-grid-cell-empty { display:none } #pl-9 .panel-grid .panel-grid-cell-mobile-last { margin-bottom:0px } #panel-9-0-2-0> .panel-widget-style { padding:30px 35px 30px 35px } #pg-9-10> .panel-row-style { background-attachment:scroll }  } </style>
+</head>
+<body class="home page-template page-template-template-front-page-slider page-template-template-front-page-slider-php page page-id-9 theme-medicpress-pt siteorigin-panels siteorigin-panels-before-js siteorigin-panels-home woocommerce-no-js wp-featherlight-captions medicpress-pt js-sticky-navigation pt-pb-loaded">
+<div class="boxed-container">
+<div class="top__container">
+<div class="container">
+<div class="top">
+<div class="top__left">
+<div class="widget  widget_text"> <div class="textwidget"><strong>An apple a day keeps the doctor away</strong></div>
+</div> </div>
+<div class="top__right">
+<div class="widget  widget-icon-box">
+<div class="icon-box">
+<i class="fa  fa-home"></i>
+<p class="icon-box__title">Address:</p>
+<p class="icon-box__subtitle">Malagala Mn Rd, Nagarbhavi 2nd stage, Bengaluru 560072</p>
+</div>
+</div> </div>
+</div>
+</div>
+</div>
+<header class="header__container">
+<div class="container">
+<div class="header">
+
+<a class="header__logo" href="index.html">
+<img src="wp-content/uploads/sites/48/2017/02/parvva-logo.png" alt="MedicPress" srcset="wp-content/uploads/sites/48/2017/02/parvva-logo.png" class="img-fluid" width="242" height="61" />
+</a>
+
+<button class="btn  btn-primary  header__navbar-toggler  hidden-lg-up  js-sticky-mobile-option" type="button" data-toggle="collapse" data-target="#medicpress-main-navigation"><i class="fa  fa-bars  hamburger"></i> <span>MENU</span></button>
+
+<nav class="header__main-navigation  collapse  navbar-toggleable-md  js-sticky-desktop-option" id="medicpress-main-navigation" aria-label="Main Menu">
+<ul id="menu-main-menu" class="main-navigation  js-main-nav  js-dropdown" role="menubar"><li id="menu-item-15" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-9 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-15" aria-haspopup="true" aria-expanded="false" tabindex="0"><a href="index.html">Home</a>
+
+</li>
+<li id="menu-item-122" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-122" aria-haspopup="true" aria-expanded="false" tabindex="0"><a href="departments.html">Departments</a>
+<ul class="sub-menu">
+<li id="menu-item-581" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-581"><a href="womens-health.html">Obstetrics and Genecology </a></li>
+<li id="menu-item-580" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-580"><a href="surgery-and-radiology.html">General Surgery & Medicine</a></li>
+<li id="menu-item-582" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-582"><a href="family-medicine.html">Physiotherapy </a></li>
+<li id="menu-item-583" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-583"><a href="optician.html">ENT</a></li>
+<li id="menu-item-584" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-584"><a href="pediatrics.html">Paediatrics</a></li>
+<li id="menu-item-584" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-584"><a href="#">Orthopaedics</a></li>
+<li id="menu-item-585" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-585"><a href="#">Endocrinology </a></li>
+<li id="menu-item-585" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-585"><a href="#">Cardiology  </a></li>
+<li id="menu-item-585" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-585"><a href="dermatology.html">Cosmetology   </a></li>
+<li id="menu-item-585" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-585"><a href="surgery-and-radiology.html">Radiology  </a></li>
+
+</ul>
+</li>
+<li id="menu-item-124" class="pt-special-dropdown menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-124" aria-haspopup="true" aria-expanded="false" tabindex="0">
+	<a href="our-doctors.html">Our Doctors</a>
+<ul class="sub-menu">
+<li id="menu-item-590" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-590"><a href="dr-chaitra.html"><img width="90" height="90" src="wp-content/uploads/sites/48/2017/02/Dr. Chaitra.jpg" data-lazy-src="wp-content/uploads/sites/48/2017/02/Dr. Chaitra.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="Dr. Chaitra S Niranthara" /> Dr. Chaitra S Niranthara</a></li>
+<li id="menu-item-588" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-588"><a href="niranthara.html"><img width="90" height="90" src="wp-content/uploads/sites/48/2017/02/Dr Niranthara Ganesh.jpg" data-lazy-src="wp-content/uploads/sites/48/2017/02/Dr Niranthara Ganesh.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="Dr. Niranthara Ganesh" />Dr. Niranthara Ganesh</a></li>
+<li id="menu-item-586" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-586"><a href="#"><img width="90" height="90" src="wp-content/uploads/sites/48/2017/02/Dr. Ramya Shivananjaiah.jpg" data-lazy-src="wp-content/uploads/sites/48/2017/02/Dr. Ramya Shivananjaiah.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="Dr. Ramya Shivananjaiah" />Dr. Ramya </a></li>
+<li id="menu-item-587" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-587"><a href="abhilash.html"><img width="90" height="90" src="wp-content/uploads/sites/48/2017/02/Dr Abhilash Venkatesh.jpg" data-lazy-src="wp-content/uploads/sites/48/2017/02/Dr Abhilash Venkatesh.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt=" Dr Abhilash Venkatesh" /> Dr. Abhilash Venkatesh</a></li>
+<li id="menu-item-589" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-589"><a href="nalluri-sravya.html"><img width="90" height="90" src="wp-content/uploads/sites/48/2017/02/Dr. Nalluri Sravya.jpg" data-lazy-src="wp-content/uploads/sites/48/2017/02/Dr. Nalluri Sravya.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="Dr. Nalluri Sravya" /> Dr. Nalluri Sravya</a></li>
+</ul>
+</li>
+</li>
+<li id="menu-item-16" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16"><a href="news.html">News</a></li>
+<li id="menu-item-123" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-123"><a href="contact-us.html">Contact Us</a></li>
+</ul> 
+<a class="btn  btn-secondary  btn-featured" href="#" target="_self">Download Report</a>
+</nav>
+</div>
+</div>
+</header>
+
+<div class="page-header">
+<div class="container">
+<h1 class="page-header__title">Cosmetology</h1>
+<div class="breadcrumbs">
+
+<span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="Go to parvva-diagnostics." href="index.html" class="home"><span property="name">Home</span></a><meta property="position" content="1"></span><span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="Go to Departments." href="departments.html" class="post post-page"><span property="name">Departments</span></a><meta property="position" content="2"></span><span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="Go to Dermatology." href="dermatology.html" class="post post-page current-item"><span property="name">Cosmetology</span></a><meta property="position" content="3"></span> </div>
+</div>
+</div>
+<div id="primary" class="content-area  container">
+<div class="row">
+<main id="main" class="site-main  col-xs-12  site-main--left  col-lg-9  push-lg-3">
+<article id="post-151" class="post-151 page type-page status-publish has-post-thumbnail clearfix article">
+<div class="article__content">
+<div id="pl-151" class="panel-layout"><div id="pg-151-0" class="panel-grid panel-no-style"><div id="pgc-151-0-0" class="panel-grid-cell"><div id="panel-151-0-0-0" class="so-panel widget widget_sow-editor panel-first-child panel-last-child" data-index="0"><div class="so-widget-sow-editor so-widget-sow-editor-base">
+<div class="siteorigin-widget-tinymce textwidget">
+<h3>Our Clinic and Doctors</h3>
+<p>Lorum ipsum Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, </p>
+<p>Apricot tree is the member of the rose family originating from Central and East Asia. The fruit, rich in vitamins is used to produce the pleasant smelling Apricot Kernel Oil. Apricot Kernel Oil is very mild natural oil, often used in baby products because of its fine gentle nature.</p>
+</div>
+</div></div></div></div><div id="pg-151-1" class="panel-grid panel-no-style"><div id="pgc-151-1-0" class="panel-grid-cell"><div id="panel-151-1-0-0" class="so-panel widget widget_sow-editor panel-first-child panel-last-child" data-index="1"><div class="so-widget-sow-editor so-widget-sow-editor-base">
+<div class="siteorigin-widget-tinymce textwidget">
+<p><a href="https://demo.proteusthemes.com/medicpress/wp-content/uploads/sites/48/2017/02/photo11.jpg"><img class="alignnone wp-image-31 size-full" src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-src="https://demo.proteusthemes.com/medicpress/wp-content/uploads/sites/48/2017/02/photo11.jpg" width="860" height="430" data-lazy-srcset="https://demo.proteusthemes.com/medicpress/wp-content/uploads/sites/48/2017/02/photo11.jpg 860w, https://demo.proteusthemes.com/medicpress/wp-content/uploads/sites/48/2017/02/photo11-300x150.jpg 300w, https://demo.proteusthemes.com/medicpress/wp-content/uploads/sites/48/2017/02/photo11-768x384.jpg 768w, https://demo.proteusthemes.com/medicpress/wp-content/uploads/sites/48/2017/02/photo11-350x175.jpg 350w" sizes="(max-width: 860px) 100vw, 860px" /><noscript><img class="alignnone wp-image-31 size-full" src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-src="https://demo.proteusthemes.com/medicpress/wp-content/uploads/sites/48/2017/02/photo11.jpg" width="860" height="430" data-lazy-srcset="https://demo.proteusthemes.com/medicpress/wp-content/uploads/sites/48/2017/02/photo11.jpg 860w, https://demo.proteusthemes.com/medicpress/wp-content/uploads/sites/48/2017/02/photo11-300x150.jpg 300w, https://demo.proteusthemes.com/medicpress/wp-content/uploads/sites/48/2017/02/photo11-768x384.jpg 768w, https://demo.proteusthemes.com/medicpress/wp-content/uploads/sites/48/2017/02/photo11-350x175.jpg 350w" sizes="(max-width: 860px) 100vw, 860px" /><noscript><img class="alignnone wp-image-31 size-full" src="https://demo.proteusthemes.com/medicpress/wp-content/uploads/sites/48/2017/02/photo11.jpg" width="860" height="430" srcset="https://demo.proteusthemes.com/medicpress/wp-content/uploads/sites/48/2017/02/photo11.jpg 860w, https://demo.proteusthemes.com/medicpress/wp-content/uploads/sites/48/2017/02/photo11-300x150.jpg 300w, https://demo.proteusthemes.com/medicpress/wp-content/uploads/sites/48/2017/02/photo11-768x384.jpg 768w, https://demo.proteusthemes.com/medicpress/wp-content/uploads/sites/48/2017/02/photo11-350x175.jpg 350w" sizes="(max-width: 860px) 100vw, 860px" /></noscript></noscript></a></p>
+</div>
+</div></div></div><div id="pgc-151-1-1" class="panel-grid-cell"><div id="panel-151-1-1-0" class="so-panel widget widget_sow-editor panel-first-child panel-last-child" data-index="2"><div class="so-widget-sow-editor so-widget-sow-editor-base">
+<div class="siteorigin-widget-tinymce textwidget">
+<p><a href="https://demo.proteusthemes.com/medicpress/wp-content/uploads/sites/48/2017/02/photo22.jpg"><img class="alignnone wp-image-50 size-full" src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-src="https://demo.proteusthemes.com/medicpress/wp-content/uploads/sites/48/2017/02/photo22.jpg" width="860" height="430" data-lazy-srcset="https://demo.proteusthemes.com/medicpress/wp-content/uploads/sites/48/2017/02/photo22.jpg 860w, https://demo.proteusthemes.com/medicpress/wp-content/uploads/sites/48/2017/02/photo22-300x150.jpg 300w, https://demo.proteusthemes.com/medicpress/wp-content/uploads/sites/48/2017/02/photo22-768x384.jpg 768w, https://demo.proteusthemes.com/medicpress/wp-content/uploads/sites/48/2017/02/photo22-350x175.jpg 350w" sizes="(max-width: 860px) 100vw, 860px" /><noscript><img class="alignnone wp-image-50 size-full" src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-src="https://demo.proteusthemes.com/medicpress/wp-content/uploads/sites/48/2017/02/photo22.jpg" width="860" height="430" data-lazy-srcset="https://demo.proteusthemes.com/medicpress/wp-content/uploads/sites/48/2017/02/photo22.jpg 860w, https://demo.proteusthemes.com/medicpress/wp-content/uploads/sites/48/2017/02/photo22-300x150.jpg 300w, https://demo.proteusthemes.com/medicpress/wp-content/uploads/sites/48/2017/02/photo22-768x384.jpg 768w, https://demo.proteusthemes.com/medicpress/wp-content/uploads/sites/48/2017/02/photo22-350x175.jpg 350w" sizes="(max-width: 860px) 100vw, 860px" /><noscript><img class="alignnone wp-image-50 size-full" src="https://demo.proteusthemes.com/medicpress/wp-content/uploads/sites/48/2017/02/photo22.jpg" width="860" height="430" srcset="https://demo.proteusthemes.com/medicpress/wp-content/uploads/sites/48/2017/02/photo22.jpg 860w, https://demo.proteusthemes.com/medicpress/wp-content/uploads/sites/48/2017/02/photo22-300x150.jpg 300w, https://demo.proteusthemes.com/medicpress/wp-content/uploads/sites/48/2017/02/photo22-768x384.jpg 768w, https://demo.proteusthemes.com/medicpress/wp-content/uploads/sites/48/2017/02/photo22-350x175.jpg 350w" sizes="(max-width: 860px) 100vw, 860px" /></noscript></noscript></a></p>
+</div>
+</div></div></div></div><div id="pg-151-2" class="panel-grid panel-no-style"><div id="pgc-151-2-0" class="panel-grid-cell"><div id="panel-151-2-0-0" class="so-panel widget widget_sow-editor panel-first-child panel-last-child" data-index="3"><div class="so-widget-sow-editor so-widget-sow-editor-base">
+<div class="siteorigin-widget-tinymce textwidget">
+<h4 style="text-align: left">Our Services</h4>
+</div>
+</div></div></div></div><div id="pg-151-3" class="panel-grid panel-no-style"><div id="pgc-151-3-0" class="panel-grid-cell"><div id="panel-151-3-0-0" class="so-panel widget widget_pw_icon_box widget-icon-box panel-first-child panel-last-child" data-index="4">
+<div class="icon-box">
+<i class="fa  mp mp-clipboard"></i>
+<p class="icon-box__title">Skin Check-ups</p>
+<p class="icon-box__subtitle">The 21st century is the golden age for surgical procedu res, among them an increasingly.</p>
+</div>
+</div></div><div id="pgc-151-3-1" class="panel-grid-cell"><div id="panel-151-3-1-0" class="so-panel widget widget_pw_icon_box widget-icon-box panel-first-child panel-last-child" data-index="5">
+<div class="icon-box">
+<i class="fa  mp mp-medical"></i>
+<p class="icon-box__title">First Aid</p>
+<p class="icon-box__subtitle">The 21st century is the golden age for surgical procedu res, among them an increasingly.</p>
+</div>
+</div></div><div id="pgc-151-3-2" class="panel-grid-cell"><div id="panel-151-3-2-0" class="so-panel widget widget_pw_icon_box widget-icon-box panel-first-child panel-last-child" data-index="6">
+<div class="icon-box">
+<i class="fa  mp mp-medicine-bottle02"></i>
+<p class="icon-box__title">Drug Perscription</p>
+<p class="icon-box__subtitle">The 21st century is the golden age for surgical procedu res, among them an increasingly.</p>
+</div>
+</div></div></div><div id="pg-151-4" class="panel-grid panel-has-style"><div class="panel-row-style panel-row-style-for-151-4"><div id="pgc-151-4-0" class="panel-grid-cell"><div id="panel-151-4-0-0" class="so-panel widget widget_pw_call_to_action widget-call-to-action panel-first-child panel-last-child" data-index="7"><div class="panel-widget-style panel-widget-style-for-151-4-0-0"> <div class="call-to-action">
+<div class="call-to-action__text">
+<h2 class="call-to-action__title">
+You need to make an appointment? </h2>
+<p class="call-to-action__subtitle">
+Select your doctor for more information. </p>
+</div>
+
+</div>
+</div></div></div></div></div>
+
+</div>
+</article>
+</main>
+<div class="col-xs-12  col-lg-3  pull-lg-9">
+<div class="sidebar" role="complementary">
+<div class="widget  widget_nav_menu"><div class="menu-departments-container"><ul id="menu-departments" class="menu"><li id="menu-item-682" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-682"><a href="surgery-and-radiology.html">Surgery and Radiology</a></li>
+<li id="menu-item-684" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-684"><a href="family-medicine.html">Family Medicine</a></li>
+<li id="menu-item-683" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-683"><a href="womens-health.html">Women&#8217;s Health</a></li>
+<li id="menu-item-685" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-685"><a href="optician.html">Optician</a></li>
+<li id="menu-item-686" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-686"><a href="pediatrics.html">Pediatrics</a></li>
+<li id="menu-item-687" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-687 current-menu-item"><a href="dermatology.html">Dermatology</a></li>
+</ul></div></div><div class="widget  widget-opening-time"> <div class="opening-time">
+<div class="opening-time__item">
+<div class="opening-time__day">
+Mon - Fri </div>
+<div class="opening-time__time">
+0:00 - 24:00 </div>
+</div>
+<div class="opening-time__item">
+<div class="opening-time__day">
+Sat - Sun </div>
+<div class="opening-time__time">
+0:00 - 24:00 </div>
+</div>
+<div class="opening-time__item">
+<div class="opening-time__day">
+Visit time </div>
+<div class="opening-time__time">
+10:00 - 16:00 </div>
+</div>
+<div class="opening-time__item  opening-time__item--less-important">
+<div class="opening-time__day">
+All holidays </div>
+<div class="opening-time__time">
+Open </div>
+</div>
+</div>
+</div>
+<div class="widget  widget-icon-list"> <div class="icon-list">
+<div class="icon-list__item  icon-list__item--default">
+<i class="fa  fa-phone" aria-hidden="true"></i>
+<div class="icon-list__text">
+63649-11368 </div>
+</div>
+<div class="icon-list__item  icon-list__item--default">
+<i class="fa  fa-envelope-o" aria-hidden="true"></i>
+<div class="icon-list__text"><a href="mailto:chaitra@parvva_diagnostics.com" class="__cf_email__" data-cfemail="">Chaitra@parvva-diagnostics.com</a> </div>
+</div>
+<div class="icon-list__item  icon-list__item--default">
+<i class="fa  fa-home" aria-hidden="true"></i>
+
+<div class="icon-list__text">Malagala Mn Rd, Nagarbhavi 2nd stage, Bengaluru 560072</div>
+</div>
+</div>
+</div>  </div>
+</div>
+</div>
+</div>
+<footer class="footer">
+<div class="footer-top">
+<div class="container">
+<div class="row">
+<div class="col-xs-12  col-lg-4"><div class="widget  widget_text"> <div class="textwidget"><img src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-src="wp-content/uploads/sites/48/2017/02/parvva-logo-new.png" alt="Footer Logo"><noscript><img src="wp-content/uploads/sites/48/2017/02/parvva-logo-new.png" alt="Footer Logo"></noscript>
+<br><br>To create a healthy Karnataka though accessible and 
+affordably healthcare system. 
+Making it the most available ,esteemed and aspired 
+brand in health care system
+<br><br>
+<a class="btn  btn-secondary" href="contact-us.html" target="_self" rel="noopener noreferrer"> Book Appointment</a>
+</div>
+</div></div><div class="col-xs-12  col-lg-2"><div class="widget  widget_nav_menu"><h4 class="footer-top__heading">Departments</h4>
+	<div class="menu-departments-container">
+		<ul id="menu-departments-1" class="menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-682"><a href="surgery-and-radiology.html">Surgery and Radiology</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-684"><a href="family-medicine.html">Family Medicine</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-683"><a href="womens-health.html">Women&#8217;s Health</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-685"><a href="optician.html">ENT</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-686"><a href="pediatrics.html">Pediatrics</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-687"><a href="dermatology.html">Cosmetology</a></li>
+</ul></div></div></div><div class="col-xs-12  col-lg-2"><div class="widget  widget_nav_menu"><h4 class="footer-top__heading">Menu</h4>
+	<div class="menu-menu-footer-container">
+		<ul id="menu-menu-footer" class="menu">
+<li id="menu-item-593" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-593"><a href="index.html">Home</a></li>
+			<li id="menu-item-593" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-593"><a href="departments.html">Departments</a></li>
+<li id="menu-item-595" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-595"><a href="our-doctors.html	">Our Doctors</a></li>
+<li id="menu-item-594" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-594"><a href="news.html">News</a></li>
+<li id="menu-item-592" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-592"><a href="contact-us.html">Contact Us</a></li>
+</ul></div></div></div><div class="col-xs-12  col-lg-4"><div class="widget  widget-icon-list"> <div class="icon-list">
+<div class="icon-list__item  icon-list__item--featured">
+<i class="fa  fa-phone" aria-hidden="true"></i>
+<div class="icon-list__content">
+<div class="icon-list__description">
+Emergency number </div>
+<div class="icon-list__text">
+6364911368 </div>
+</div>
+</div>
+<div class="icon-list__item  icon-list__item--default">
+<i class="fa  fa-envelope-o" aria-hidden="true"></i>
+<div class="icon-list__text">
+<a href="mailto:chaitra@parvva_diagnostics.com" class="__cf_email__" data-cfemail="">info@parvva-diagnostics.com</a> </div>
+</div>
+<div class="icon-list__item  icon-list__item--default">
+<i class="fa  fa-envelope-o" aria-hidden="true"></i>
+<div class="icon-list__text">
+<a href="mailto:chaitra@parvva_diagnostics.com" class="__cf_email__" data-cfemail="">Chaitra@parvva-diagnostics.com</a> </div>
+</div>
+<div class="icon-list__item  icon-list__item--default">
+<i class="fa  fa-home" aria-hidden="true"></i>
+<div class="icon-list__text">Malagala Mn Rd, Nagarbhavi 2nd stage, Bengaluru 560072</div>
+</div>
+</div>
+</div></div> </div>
+</div>
+<a class="footer-top__back-to-top  js-back-to-top" href="#"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+</div>
+<div class="footer-bottom__container">
+<div class="container">
+<div class="footer-bottom">
+<div class="footer-bottom__left">
+&copy; 2020 <strong><a href="#">Parvva diagnostics </a></strong> All Rights Reserved. </div>
+<div class="footer-bottom__right">
+<a class="icon-container" href="#" target="_self"><span class="fa fa-twitter"></span></a> <a class="icon-container" href="https://www.facebook.com/parvvadiagnosticsandhealthcare" target="_blank"><span class="fa fa-facebook"></span></a> 
+<a class="icon-container" href="https://www.youtube.com/channel/UCm-EO6g_tb4H5w_XuhLWqmw" target="_blank"><span class="fa fa-youtube"></span></a> </div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+
+
+
+
+
+
+
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"https:\/\/demo.proteusthemes.com\/medicpress\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"cached":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='wp-content/plugins/contact-form-7/includes/js/scripts.js'></script>
+<script type='text/javascript' src='wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wc_add_to_cart_params = {"ajax_url":"\/medicpress\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/medicpress\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"https:\/\/demo.proteusthemes.com\/medicpress\/shop\/cart\/","is_cart":"","cart_redirect_after_add":"no"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js'></script>
+<script type='text/javascript' src='wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"\/medicpress\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/medicpress\/?wc-ajax=%%endpoint%%"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wc_cart_fragments_params = {"ajax_url":"\/medicpress\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/medicpress\/?wc-ajax=%%endpoint%%","cart_hash_key":"wc_cart_hash_c5c2fc8c0ae1b792a4ead8a9c8f38724","fragment_name":"wc_fragments_c5c2fc8c0ae1b792a4ead8a9c8f38724","request_timeout":"5000"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js'></script>
+<script type='text/javascript' src='wp-includes/js/underscore.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var MedicPressVars = {"pathToTheme":"https:\/\/demo.proteusthemes.com\/medicpress\/wp-content\/themes\/medicpress-pt","ajax_url":"https:\/\/demo.proteusthemes.com\/medicpress\/wp-admin\/admin-ajax.php","ajax_nonce":"741f94670b"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='wp-content/themes/medicpress-pt/assets/js/main.min.js'></script>
+<script type='text/javascript' src='wp-content/themes/medicpress-pt/vendor/wai-aria.js'></script>
+<script type='text/javascript' src='wp-content/plugins/pt-preview-bar/assets/js/dist/main.js'></script>
+<script type='text/javascript' src='wp-content/plugins/wp-featherlight/js/wpFeatherlight.pkgd.min.js'></script>
+<script type='text/javascript' src='wp-includes/js/wp-embed.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var panelsStyles = {"fullContainer":".boxed-container"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='wp-content/plugins/siteorigin-panels/js/styling-21013.min.js'></script>
+<script type='text/javascript' src='wp-content/plugins/siteorigin-panels/js/siteorigin-parallax.min.js'></script>
+<script type="text/javascript">document.body.className = document.body.className.replace("siteorigin-panels-before-js","");</script><script>(function(w, d){
+	var b = d.getElementsByTagName("body")[0];
+	var s = d.createElement("script"); s.async = true;
+	var v = !("IntersectionObserver" in w) ? "8.7.1" : "10.5.2";
+	s.src = "https://demo.proteusthemes.com/medicpress/wp-content/plugins/wp-rocket/inc/front/js/lazyload-" + v + ".min.js";
+	w.lazyLoadOptions = {
+		elements_selector: "img, iframe",
+		data_src: "lazy-src",
+		data_srcset: "lazy-srcset",
+		skip_invisible: false,
+		class_loading: "lazyloading",
+		class_loaded: "lazyloaded",
+		threshold: 300,
+		callback_load: function(element) {
+			if ( element.tagName === "IFRAME" && element.dataset.rocketLazyload == "fitvidscompatible" ) {
+				if (element.classList.contains("lazyloaded") ) {
+					if (typeof window.jQuery != "undefined") {
+						if (jQuery.fn.fitVids) {
+							jQuery(element).parent().fitVids();
+						}
+					}
+				}
+			}
+		}
+	}; // Your options here. See "recipes" for more information about async.
+	b.appendChild(s);
+}(window, document));
+
+// Listen to the Initialized event
+window.addEventListener('LazyLoad::Initialized', function (e) {
+    // Get the instance and puts it in the lazyLoadInstance variable
+	var lazyLoadInstance = e.detail.instance;
+
+	var observer = new MutationObserver(function(mutations) {
+		mutations.forEach(function(mutation) {
+			lazyLoadInstance.update();
+		} );
+	} );
+	
+	var b      = document.getElementsByTagName("body")[0];
+	var config = { childList: true, subtree: true };
+	
+	observer.observe(b, config);
+}, false);
+</script> </body>
+</html>
